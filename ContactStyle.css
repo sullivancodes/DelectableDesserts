@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  width: 100%;
+  min-width: 900px;
+  height: 80vh;
+  margin: 0px auto 0px auto;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  -ms-justify-content: center;
+  -ms-align-items: center;
+  -ms-flex-pack: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-pack: center;
+}
+
+.header {
+  height: 60px;
+  width: 100vw;
+  min-width: 900px;
+  margin: 0px auto 0px auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  border-bottom: .5px solid goldenrod;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  -ms-justify-content: center;
+  -ms-align-items: center;
+  -ms-flex-pack: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-pack: center;
+}
+
+.header p {
+  float: left;
+  color: white;
+  margin-top: 28px;
+  font-size: 30px;
+  font-family: 'Amatic SC';
+  margin-left: 10px;
+  overflow-y: hidden;
+}
+
+.navigation {
+  height: 50px;
+  width: auto;
+  display: block;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 100;
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation ul li {
+  float: left;
+  height: auto;
+  padding-bottom: 5px;
+  width: 150px;
+}
+
+.navigation ul li a {
+  display: block;
+  color: white;
+  letter-spacing: 1.5px;
+  text-align: center;
+  font-size: 23px;
+  text-decoration: none;
+  padding-top: 5px;
+  transition: font-size 1s;
+  font-family: "Abril Fatface";
+  font-weight: bold;
+}
+
+.navigation ul li:hover a {
+  font-size: 30px;
+  color: goldenrod;
+}
+
+#contact a {
+  color: goldenrod;
+}
+
+#header-a {
+  position: relative;
+  text-align: center;
+  font-size: 70px;
+  font-family: "Lily Script One";
+  color: goldenrod;
+}
+
+.index {
+  height: 50px;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-direction: row;
+  -ms-justify-content: center;
+  -ms-align-items: center;
+  -ms-flex-pack: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-pack: center;
+}
+
+.contact-container {
+  width: 500px;
+  margin: 0 auto 0 auto;
+}
+
+.index h1 {
+  color: goldenrod;
+  font-family: Poppins;
+}
+
+.index h2 {
+  font-family: Poppins;
+  color: white;
+  margin: 10px 0 0 20px;
+}
+
+.swirls {
+  margin: 0px 0px 40px 0px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  min-width: 900px;
+  height: 100px;
+  background-color: black;
+  border-top: .5px solid goldenrod;
+  z-index: 2;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-direction: row;
+  -ms-justify-content: center;
+  -ms-align-items: center;
+  -ms-flex-pack: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-pack: center;
+}
+
+.footer h2 {
+  margin: 3px 0px 3px 0px;
+  z-index: 3;
+  color: white;
+  font-size: 25px;
+  font-family: Poppins;
+}
+
+.footer img {
+  height: 60px;
+  width: 60px;
+  margin: 0px 0px 0px 10px;
+}
+
+#facebook {
+  margin-left: 50px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.sub-div {
+  width: 100vw;
+  height: 100px;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-direction: row;
+  -ms-justify-content: center;
+  -ms-align-items: center;
+  -ms-flex-pack: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-pack: center;
+}
+
+/* Iphone 6+ */
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+	::-webkit-scrollbar {
+      width: 0px;
+      /* remove scrollbar space */
+      background: transparent;
+      /* optional: just make scrollbar invisible */
+    }
+  .menu-icon {
+    display: block;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 10;
+  }
+  .main-container {
+    height: 70vh;
+  }
+  .header {
+    width: 100vw;
+    min-width: 100vw;
+    border-bottom: 2px solid goldenrod;
+  }
+  .navigation {
+    display: block;
+    background-color: rgba(0, 0, 0, .9);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: -100vh;
+    z-index: 1;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    -ms-justify-content: center;
+    -ms-align-items: center;
+    -ms-flex-pack: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-pack: center;
+  }
+  .navigation ul {
+    height: auto;
+  }
+  .navigation ul li {
+    float: left;
+    height: 70px;
+    padding-bottom: 0px;
+    width: 100%;
+  }
+  .navigation ul li a {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    text-decoration: none;
+    font-family: Abril Fatface;
+    padding-top: 10px;
+    transition: font-size 1s;
+    font-weight: bold;
+  }
+  .navigation ul li:hover a {
+    font-size: 35px;
+    color: goldenrod;
+  }
+  .main-container {
+    width: 100%;
+    min-width: 100vw;
+  }
+  #header-a {
+    font-size: 42px;
+  }
+  .swirls {
+    width: 90%;
+    margin: 0px 0px 40px 0px;
+  }
+  .index h1 {
+    font-size: 22px;
+    margin-right: -10px;
+  }
+  .index h2 {
+    font-size: 22px;
+  }
+  .footer {
+    position: relative;
+    min-width: 100vw;
+    width: 100vw;
+    height: auto;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footer h2 {
+    font-size: 22px;
+    margin: 0;
+  }
+  .footer img {
+    height: 40px;
+    width: 40px;
+  }
+  .sub-div {
+    width: 100vw;
+    height: 100px;
+    border-top: 1px solid goldenrod;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+    -ms-justify-content: center;
+    -ms-align-items: center;
+    -ms-flex-pack: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-pack: center;
+  }
+  #facebook {
+    margin-left: 0px;
+  }
+  .footer .sub-div .b {
+    border-bottom: 1px solid goldenrod;
+  }
+}
+
+/* Iphone 6*/
+
+@media screen and (max-width: 375px) {
+
+  #header-a {
+    font-size: 38px;
+  }
+  .footer {
+    height: 250px;
+  }
+  .index h1 {
+    font-size: 23px;
+    margin-right: -10px;
+  }
+  .index h2 {
+    font-size: 23px;
+  }
+}
+
+/* Iphone 5 and 5s */
+
+@media screen and (min-width: 320px) and (max-width: 320px) {
+  .index {
+    margin-top: -20px;
+  }
+  #header-a {
+    font-size: 35px;
+  }
+  .footer {
+    height: 220px;
+  }
+  .index h1 {
+    font-size: 20px;
+    margin-right: -10px;
+  }
+  .index h2 {
+    font-size: 20px;
+  }
+  .footer h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+}
